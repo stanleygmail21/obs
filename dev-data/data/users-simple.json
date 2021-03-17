@@ -1,0 +1,44 @@
+[
+  {
+    "_id": "5ed653af8ea0d63ef4f43ec0",
+    "name": "user1",
+    "email": "obikakelvin@yahoo.com",
+    "password": "1111",
+    "passwordConfirm": "1111",
+    "age": 23
+  },
+
+  {
+    "_id": "5ed653af8ea0d63ef4f43ebe",
+    "name": "user2",
+    "email": "obikakelvin@yaho.com",
+    "password": "1111",
+    "passwordConfirm": "1111",
+    "age": 33
+  },
+  {
+    "_id": "5ed653af8ea0d63ef4f43ebf",
+    "name": "user3",
+    "email": "obikakelvin@yah.com",
+    "password": "1111",
+    "passwordConfirm": "1111",
+    "age": 40
+  },
+  {
+    "_id": "5eff5a412eff964170a2731b",
+    "name": "user4",
+    "email": "obikakelvin@ya.com",
+    "password": "1111",
+    "passwordConfirm": "1111",
+    "age": 18
+  },
+  {
+    "_id": "5ed653af8ea0d63ef4f43ec1",
+    "name": "user5",
+    "email": "obikakelvin@yoo.com",
+    "password": "1111",
+    "passwordConfirm": "1111",
+    "age": 29
+  }
+  
+]
