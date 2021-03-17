@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="bassey"></div>
+    <div id="princess"></div>
+
+    <script>
+        const name = [];
+        const q = document.getElementById('princess');
+        var n = q.getElementsByTagName("span").length
+        for (i = 0; i < n; i++) {
+            if (q.getElementsByTagName("span")[i].textContent !== null || typeof(q.getElementsByTagName("span")[i].textContent) === "number" || !q.getElementsByTagName("span")[i].textContent.includes("mutual")) {
+                var x = q.getElementsByTagName("span")[i].textContent
+                var obj = {
+                    x
+                }
+                name.push(obj)
+            }
+
+        }
+
+        var princess = name.filter(cur => !cur.x.includes("friends") && !cur.x.includes("mutual") && !cur.x.includes("Friend") && cur.x)
+
+
+        const name1 = [];
+        const q1 = document.getElementById('bassey');
+        var n1 = q1.getElementsByTagName("span").length
+        for (i = 0; i < n1; i++) {
+            if (q1.getElementsByTagName("span")[i].textContent !== null || typeof(q1.getElementsByTagName("span")[i].textContent) === "number" || !q1.getElementsByTagName("span")[i].textContent.includes("mutual")) {
+                var x1 = q1.getElementsByTagName("span")[i].textContent
+                var obj1 = {
+                    x1
+                }
+                name1.push(obj1)
+            }
+
+        }
+
+        var bassey = name1.filter(cur => !cur.x1.includes("friends") && !cur.x1.includes("mutual") && !cur.x1.includes("Friend") && !cur.x1.includes("Request") && cur.x1);
+
+        var equal = [];
+        for (i = 0; i < princess.length; i++) {
+            var one = princess[i].x;
+            for (j = 0; j < bassey.length; j++) {
+                var two = bassey[j].x1;
+
+                if (one === two) {
+                    console.log(one)
+                    equal.push(one)
+                }
+            }
+        }
+
+        console.log(equal.length)
+    </script>
+
+
+</html>

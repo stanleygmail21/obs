@@ -1,0 +1,26 @@
+{
+  "name": "myapi",
+  "version": "1.0.0",
+  "description": "To test my knowledge on basic node js",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Obika Kelvin",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.19",
+    "nodemailer": "^6.4.10",
+    "nodemon": "^2.0.4",
+    "slugify": "^1.4.0",
+    "validator": "^13.1.1"
+  },
+  "devDependencies": {}
+}
